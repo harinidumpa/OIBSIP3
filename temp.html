@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tempbox">
+            <h1>
+                <b> Temperature Converter </b>
+             </h1>
+         <div class="inputfield">
+            <input type="text" class="input" id="input">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" id="drop">celsius ⏬</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#" name="celsius" onclick="funct()">celsius</a>
+                  <a href="#" name="farehnheit" onclick="funct2()">fahrenheit</a>
+                  <a href="#" name="kelvin" onclick="funct3()">kelvin</a>
+                </div>
+              </div>
+        </div>
+        <div class="result">
+            <p class="resp1" id="resp1"><b>Temperature in fahrenheit</b></p>
+            <input type="text" name="res1" id="res1" >
+            <p class="resp2" id="resp2"><b>Temperature in kelvin</b></p>
+            <input type="text" name="res2" id="res2" >
+
+        </div>
+       <div class="buttons">
+        <button type="submit" class="convert" onclick="function_convert()"><b>Convert</b></button>
+        <button type="submit" class="clear" onclick="function_clear()"><b>clear</b></button>
+       </div>
+      </div>
+</div>
+    <script src="temp.js"></script>
+</body>
+</html>
